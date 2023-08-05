@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="database-url" content="https://raw.githubusercontent.com/ASQAS71/usuarios/main/usuarios.json">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>CRUD | Create | Read | Update | Delete</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p class="error-msg" id="header-error-msg"></p>
+        <h1>CRUD MODES</h1>
+        <div id="modes">
+            <button class="header-title" id="header-title-create" aria-label="Create Mode" data-mode="create">
+                <i class="material-icons">create</i>
+                Create
+            </button>
+            <button class="header-title" id="header-title-read" aria-label="Read Mode" data-mode="read">
+                <i class="material-icons">search</i>
+                Read
+            </button>
+            <button class="header-title" id="header-title-update" aria-label="Update Mode" data-mode="update">
+                <i class="material-icons">update</i>
+                Update
+            </button>
+            <button class="header-title" id="header-title-delete" aria-label="Delete Mode" data-mode="delete">
+                <i class="material-icons">delete</i>
+                Delete
+            </button>
+        </div>
+    </header>
+    <main>
+        <div id="form-container">
+            <form id="form">
+                <div id="form-inputs">
+                    <!-- Aqui vai ter o formulário do CRUD -->
+                </div>
+                <div id="buttons">
+                    <button id="clear-form" type="reset" aria-label="Limpar" hidden="hidden">Limpar</button>
+                    <button id="register" type="submit" aria-label="Adicionar" hidden="hidden">Registrar</button>
+                </div>
+            </form>
+        </div>
+        <div id="table-container">
+            <table id="table">
+                <!-- Aqui vai ter a tabela mostrando os usuários do sistema -->
+            </table>
+        </div>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>

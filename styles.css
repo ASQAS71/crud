@@ -1,0 +1,212 @@
+body {
+    background-color: gray;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.header-title {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#header-title-create:hover {
+    background-color: purple;
+    color: white;
+}
+
+#header-title-read:hover {
+    background-color: cadetblue;
+    color: white;
+}
+
+#header-title-update:hover {
+    background-color: darkorange;
+    color: black;
+}
+
+#header-title-delete:hover {
+    background-color: saddlebrown;
+    color: white;
+}
+
+main {
+    padding: 50px;
+    display: flex;
+}
+
+#form-container {
+    margin-right: 10px; /* Ajuste o valor conforme necessário */
+}
+
+#table-container {
+    margin-left: 10px; /* Ajuste o valor conforme necessário */
+}
+
+.error-msg {
+    color: darkred;
+}
+
+#form {
+    background-color: darkslategray;
+    max-width: 600px;
+    min-width: 600px;
+    margin: 10px auto;
+    padding: 100px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-transform: uppercase;
+}
+
+#form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#form div {
+    padding: 15px;
+    background-color: inherit;
+}
+
+#form div div {
+    padding: 15px 30px;
+    background-color: darkslateblue;
+}
+
+#form input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+#form input[type="checkbox"] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+#form .input-group {
+    display: flex;
+    margin-right: 10px;
+    flex: 1;
+}
+
+::placeholder {
+    opacity: 0.8;
+}
+
+#form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#form button:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #0062cc;
+}
+
+#Table {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    overflow: visible;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+    width: 100%;
+    margin: 10px auto;
+}
+
+table th,
+table td {
+    border: 1px solid silver;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: darkgoldenrod;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+table tr {
+    position: relative;
+}
+
+table tr:nth-child(even) {
+    background-color: rebeccapurple;
+}
+
+table tr:nth-child(even):hover {
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.15);
+}
+
+table tr:nth-child(even) dl dt:hover,
+table tr:nth-child(even) ul li:hover {
+    background-color: mediumpurple;
+    border: 1px solid mediumpurple;
+}
+
+table tr:nth-child(odd) {
+    background-color: darkcyan;
+}
+
+table tr:nth-child(odd):hover {
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.18);
+}
+
+table tr:nth-child(odd) dl dt:hover,
+table tr:nth-child(odd) ul li:hover {
+    background-color: darkseagreen;
+    border: 1px solid darkseagreen;
+}
+
+ul, dl {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+    text-transform: capitalize;
+}
+
+table td:hover {
+    color: white;
+}
+
+ul li, dl dt, dl dd {
+    list-style: none;
+    padding: 5px;
+    margin-bottom: 5px;
+}
